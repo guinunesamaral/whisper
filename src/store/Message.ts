@@ -6,6 +6,6 @@ export default interface Message {
   image: string | null
   dateCreated: Date
   dateUpdated: Date | null
-  from: User
-  to: User
+  from: User | null
+  to: User | null
 }

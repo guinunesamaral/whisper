@@ -13,7 +13,7 @@ export default function ChatLog() {
         backgroundImage: "url('https://wallpapercave.com/dwp2x/wp7373636.jpg')",
       }}
     >
-      <Message text='oi' image={null} dateCreated={new Date()} from={null} to={null} />
+      <Message text='oi' id={0} image={null} dateCreated={new Date()} dateUpdated={new Date()} from={null} to={null} />
     </Box>
   )
 }
