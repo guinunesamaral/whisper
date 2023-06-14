@@ -29,7 +29,7 @@ function getIcon(index: number) {
 }
 
 export default function ResponsiveDrawer({ open, handleDrawerToggle }: ResponsiveDrawerProps) {
-  const container = window !== undefined ? () => window.document.body : undefined
+  const container = window.document.body
 
   const drawer = (
     <div>
