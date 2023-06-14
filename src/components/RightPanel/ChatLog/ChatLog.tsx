@@ -1,6 +1,6 @@
-import React from 'react'
-import Message from '@/components/ChatLog/Message/Message'
 import Box from '@mui/material/Box'
+import React from 'react'
+import Message from './Message/Message'
 
 export default function ChatLog() {
   return (

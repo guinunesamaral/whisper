@@ -20,14 +20,21 @@ export default function ChatItem({ profilePicture, name, lastMessage }: ChatItem
         sx={{
           display: 'flex',
           alignItems: 'center',
-          p: '4px 6px',
+          p: '0 6px',
           cursor: 'pointer',
           ':hover': {
             backgroundColor: 'primary.dark',
           },
         }}
       >
-        <Image src={`${profilePicture}`} alt='profilePicture' width={60} height={60} style={{ borderRadius: '50%' }} />
+        <Image
+          src={`${profilePicture}`}
+          alt='profilePicture'
+          quality={100}
+          style={{ borderRadius: '50%' }}
+          width={60}
+          height={55}
+        />
 
         <Box sx={{ p: 1, mr: 1 }}>
           <Typography variant='h6'>{name}</Typography>

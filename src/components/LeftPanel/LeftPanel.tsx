@@ -1,7 +1,7 @@
-import React from 'react'
-import Box from '@mui/material/Box'
-import TopBar from './TopBar'
 import Chats from '@/components/LeftPanel/Chats/Chats'
+import Box from '@mui/material/Box'
+import React from 'react'
+import TopBar from './TopBar'
 
 export default function LeftPanel() {
   return (

@@ -5,11 +5,13 @@
     "plugin:react/recommended"
   ],
   "rules": {
-      "no-restricted-imports": [
-        "error",
-        {
-          "patterns": ["@mui/*/*/*"]
-        }
-      ]
-    }
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["@mui/*/*/*"]
+      }
+    ]
+  },
+  "react/jsx-uses-react": 0,
+  "react/react-in-jsx-scope": 0
 }
