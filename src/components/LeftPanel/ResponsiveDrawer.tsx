@@ -29,8 +29,6 @@ function getIcon(index: number) {
 }
 
 export default function ResponsiveDrawer({ open, handleDrawerToggle }: ResponsiveDrawerProps) {
-  const container = window.document.body
-
   const drawer = (
     <div>
       <Toolbar />
@@ -51,7 +49,6 @@ export default function ResponsiveDrawer({ open, handleDrawerToggle }: Responsiv
   return (
     <Box component='nav' sx={{ position: 'absolute', width: drawerWidth, flexShrink: 0 }} aria-label='mailbox folders'>
       <Drawer
-        container={container}
         variant='temporary'
         open={open}
         onClose={handleDrawerToggle}
