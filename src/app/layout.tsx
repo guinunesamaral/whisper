@@ -9,6 +9,8 @@ import { ThemeProvider } from '@mui/material/styles'
 import { Inter } from 'next/font/google'
 import React from 'react'
 import './globals.css'
+import { Provider } from 'react-redux'
+import { store } from '@/store'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,20 +18,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <ThemeProvider theme={darkTheme}>
-          <CssBaseline />
+        <Provider store={store}>
+          <ThemeProvider theme={darkTheme}>
+            <CssBaseline />
 
-          <main
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: '100%',
-            }}
-          >
-            {children}
-          </main>
-        </ThemeProvider>
+            <main
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: '100%',
+              }}
+            >
+              {children}
+            </main>
+          </ThemeProvider>
+        </Provider>
       </body>
     </html>
   )
